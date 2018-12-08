@@ -1,0 +1,39 @@
+<script type="text/javascript">
+  $(".fa-bars").on("click",function(){
+      $(".mobileNav").stop().animate({"right":"0%"});
+  })
+  $(".mobileNav").on("click",function(){
+    $(".mobileNav").stop().animate({"right":"-75%"});
+  })
+</script>
+<div class="navWrap">
+  <a href="#"><div class="logo"></div></a>
+  <ul>
+    <li><i class="fab fa-facebook"></i></li>
+    <li><i class="fab fa-instagram"></i></li>
+    <li><i class="fab fa-behance-square"></i></li>
+  </ul>
+  <ol>
+    <li><a href="#service">Service</a></li>
+    <li><a href="#function">Function</a></li>
+    <li><a href="#promotion">Promotion</a></li>
+    <li><a href="#application">Application</a></li>
+    <li><i class="fa fa-bars"></i></li>
+  </ol>
+</div>
+<div class="mobileNav">
+  <div class="logo"></div>
+  <ul>
+    <li><a href="#">----- Home -----</a></li>
+    <li><a href="#service">Service</a></li>
+    <li><a href="#function">Function</a></li>
+    <li><a href="#promotion">Promotion</a></li>
+    <li><a href="#application">Application</a></li>
+  </ul>
+  <ul>
+    <li>공유하기</li>
+    <li>Facebook</li>
+    <li>Behance</li>
+    <li>Instagram</li>
+  </ul>
+</div>

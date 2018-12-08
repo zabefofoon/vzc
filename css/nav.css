@@ -1,0 +1,39 @@
+nav {width:100%; max-width: 1920px; height:40px; position:fixed; top:0;
+     z-index: 99; background: white;
+     padding: 15px 0; left:50%; transform: translateX(-50%);
+     box-shadow: 0px 0px 5px #353535}
+nav .navWrap {width:80%; height:inherit; max-width: 1920px;
+              margin:0 auto;
+              position:relative;}
+nav .navWrap .logo {width:60px; height:60px;
+                    background:url("../img/logo.png") no-repeat 50% 50%;
+                    background-size: cover;
+                    position:absolute; left:50%; top:50%;
+                    transform:translate(-50%,-50%);}
+nav .navWrap ul,ol {position:absolute; top:50%; transform:translate(0,-50%);}
+nav .navWrap li {float:left;}
+nav .navWrap ol {right:0; font-size:.9em;}
+nav .navWrap ol li {margin-left:15px;}
+nav .navWrap ol li:nth-child(5) {display:none;}
+
+nav .navWrap ul li {margin-right:20px; font-size:1.5em;}
+
+nav .mobileNav {display:none;}
+@media(max-width:512px){
+  nav .navWrap .logo {width:30px; height:30px;}
+
+  nav .navWrap ol li {display:none;}
+  nav .navWrap ol li:nth-child(5) {display:block; font-size:1.4em;}
+
+  nav .navWrap ul li {display:none;}
+
+  nav .mobileNav {width:70%; height:100vh; background:white;
+                  position:fixed; top:0px; right:-75%;
+                  text-align:center; overflow:hidden;
+                  box-shadow:0 0 5px gray; display:block;}
+  nav .mobileNav .solid {width:100%; height:inherit; background:red;}
+  nav .mobileNav .logo {width:30px; height:30px; background:#353535;
+                        display:inline-block; margin:50px 0px 0px 0px;}
+  nav .mobileNav ul {margin-top:50px;}
+  nav .mobileNav ul li {padding:10px 0px;}
+}

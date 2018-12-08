@@ -1,0 +1,20 @@
+header {width:100%; height:600px; background: #fff3e6; position: relative; margin-top: 100px; z-index: 10;}
+header .headerWrap {width:100%; height:inherit; text-align: center;
+                    margin:0 auto;}
+header .headerWrap .slider {width:100%; height:inherit; position: relative;  overflow: hidden;}
+header .headerWrap .slider li {width:inherit; height:inherit;
+                               position: absolute; top:50%; left:50%;
+                               transform: translate(-50%,-50%); opacity: 0;}
+header .headerWrap .slider li:nth-child(1) {opacity: 1;}
+header .headerWrap .slider li img {height:inherit;}
+header .headerWrap .controller {display: inline-block;}
+header .headerWrap .controller li {width:40px; height:10px; border-radius: 25%;
+                                   float: left; margin:40px 15px; background: #f2f2f2;
+                                   cursor: pointer;}
+header .headerWrap .controller li:nth-child(1) {background:#7e842f;}
+@media(max-width:512px){
+  header {height: 200px;}
+  header .headerWrap {width:100%; text-align: center;}
+  header .headerWrap .slider li img {position: absolute; left:50%; top:50%; transform:translate(-50%,-50%);}
+  header .headerWrap .controller li {height:7.5px; margin:20px 15px;}
+}

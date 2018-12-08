@@ -1,0 +1,29 @@
+<script type="text/javascript">
+  var o = 0;
+  $(".controller li").on("click",function(){
+      o = $(this).index();
+      $(".controller li").css({"background":"#f2f2f2"});
+      $(this).css({"background":"#7e842f"});
+      $(".slider li").stop().animate({"opacity":"0"});
+      $(".slider li").eq(o).stop().animate({"opacity":"1"});
+  })
+  setInterval(function(){
+    o++; if(o>2) o = 0;
+    $(".controller li").css({"background":"#f2f2f2"});
+    $(".controller li").eq(o).css({"background":"#7e842f"});
+    $(".slider li").stop().animate({"opacity":"0"});
+    $(".slider li").eq(o).stop().animate({"opacity":"1"});
+  },5000)
+</script>
+<div class="headerWrap">
+  <ul class="slider">
+    <li><img src="./img/mockup2.png"></li>
+    <li><img src="./img/mockup3.png"></li>
+    <li><img src="./img/mockup4.png"></li>
+  </ul>
+  <ul class="controller">
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</div>

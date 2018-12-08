@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Promotion</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,700" rel="stylesheet">
+    <link href="/css/nav.css" rel="stylesheet">
+    <link href="/css/header.css" rel="stylesheet">
+    <link href="/css/service.css" rel="stylesheet">
+    <link href="/css/function.css" rel="stylesheet">
+    <link href="/css/function2.css" rel="stylesheet">
+    <link href="/css/promotion.css" rel="stylesheet">
+    <link href="/css/application.css" rel="stylesheet">
+    <style>
+      * {margin:0; padding:0; color:#353535; font-family: 'Noto Sans KR', sans-serif;}
+      ul,ol,li {list-style:none;}
+      a {text-decoration: none; color:353535;}
+      section {width:100%; position: relative;}
+      .ghost {border:1px solid #353535; display: inline-block;
+              padding: 10px; font-size: 1.5em; font-weight: 100;
+              margin-top: 50px; cursor: pointer;}
+      .ghost:hover {background: #7e842f; border-color: #7e842f; color:white;}
+
+      footer {width:100%; height:300px; background: #353535; margin-top: 150px; position: relative; }
+      footer * {color:white; font-weight: 300;}
+      footer .fnb {position: absolute; right:10%; top:50%; transform: translate(0%,-50%);}
+      footer .fnb li{display: inline-block; margin-left: 10px;}
+      footer .copyright {position: absolute; left:10%; top:50%; transform: translate(0%,-50%);}
+      footer .m {position: absolute; left:50%; top:50%; transform:translate(-50%,-50%);}
+      @media(max-width:512px){
+        footer {margin-top: 50px;}
+        footer .fnb {display: none;}
+        footer .copyright {position: absolute; left:50%; top:250px; transform: translate(-50%,0%);}
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript">
+      <!--
+        $(document).ready(function(){
+          $("nav").load("./data/nav.html");
+          $("header").load("./data/header.html");
+          $("#service").load("./data/service.html");
+          $("#promotion").load("./data/promotion.html");
+          $("#application").load("./data/application.html");
+
+          var i = 1;
+          $(".ghost1").on("click",function(){
+            i++;
+            if(i==5) i=1;
+            $(".imp1").css({"opacity":0,"margin-left":"-50px"}).load("./data/a"+i+".html").stop().animate({"opacity":1,"margin-left":0},1000);
+            $(".f1 img").css({"opacity":0,"margin-left":"-50px"}).attr("src","./img/f"+i+".png").delay(500).stop().animate({"opacity":1,"margin-left":0},1000);
+          })
+          var o = 5;
+          $(".ghost2").on("click",function(){
+            o++;
+            if(o==8) o=5;
+            $(".imp2").css({"opacity":0,"margin-left":"-50px"}).load("./data/a"+o+".html").stop().animate({"opacity":1,"margin-left":0},1000);
+            $(".f2 img").css({"opacity":0,"margin-left":"-50px"}).attr("src","./img/f"+o+".png").delay(500).stop().animate({"opacity":1,"margin-left":0},1000);
+          })
+        })
+      //-->
+    </script>
+  </head>
+  <body>
+    <nav>
+    </nav>
+    <header>
+    </header>
+    <section id="service">
+    </section>
+    <section id="function">
+      <img class="d1" src="./img/d1.png"/>
+      <div class="functionWrap">
+        <figure class="f1">
+          <img src="./img/f1.png"/>
+        </figure>
+        <article class="a1">
+          <div class="imp1">
+            <h2>Cumunication</h2>
+            <h3>이웃과의 자유로운 소통</h3>
+            <p>
+              우리 “이웃기웃”의 주 기능은 이웃 간에 자유로운 커뮤니케이션이
+              이루어지게 환경을 조성하고 방향을 제시하는 것 입니다.
+            </p>
+          </div>
+          <div class="ghost ghost1">More Information</div>
+        </article>
+      </div>
+    </section>
+    <section id="function2">
+      <img class="d1" src="./img/d1.png"/>
+      <div class="functionWrap">
+        <figure class="f2">
+          <img src="./img/f5.png"/>
+        </figure>
+        <article class="a2">
+          <div class="imp2">
+            <h2>Utility</h2>
+            <h3>“이웃기웃”의 부가 기능</h3>
+            <p>
+              소통을 위한 기능 외에도 이를 보조하는 기능과, 사용자의
+              편의성을 위한 여러 기능이 존재합니다.
+            </p>
+          </div>
+          <div class="ghost ghost2">More Information</div>
+        </article>
+      </div>
+    </section>
+    <section id="promotion">
+    </section>
+    <section id="application">
+    </section>
+    <footer>
+      <h4 class="copyright">Copyright ⓒ 2018 - 집가조</h4>
+      <ul class="fnb">
+        <li><a href="#service">Service</a></li>
+        <li><a href="#function">Function</a></li>
+        <li><a href="#promotion">Promotion</a></li>
+        <li><a href="#application">Application</a></li>
+      </ul>
+      <p class="m">
+        본 사이트는 한경대학교 미디어인터렉션 수업과정으로 만들어진 웹페이지 입니다.
+      </p>
+    </footer>
+  </body>
+</html>

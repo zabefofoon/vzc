@@ -1,0 +1,10 @@
+#promotion {text-align: center; width:100%; padding-top: 100px;}
+
+#promotion h2 {margin-bottom: 50px;}
+#promotion iframe {width:1000px; height:600px;}
+
+
+@media(max-width:512px){
+  #promotion { margin-top:0px;}
+  #promotion iframe {width:330px; height:200px;}
+}
